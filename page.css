@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.heder{
+    background-color: darkgreen;
+    height:16px;
+    width: 100%;
+  }
