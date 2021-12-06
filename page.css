@@ -1,9 +1,50 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
-.heder{
-    background-color: darkgreen;
-    height:16px;
-    width: 100%;
-  }
+
+.navbar {
+  border-top: 15px solid #0e850e ;
+  width: 100%;
+  height: 68px;
+  direction: rtl;
+  text-align: right;
+  border-bottom:2px solid #9fa89f;
+}
+
+.navbar ul.menu li  {
+  display: inline-block;  
+  padding-right: 30px;
+  margin-top: 20px;
+  
+}
+.navbar ul.menu li a { 
+    text-decoration: none; 
+    color: black;
+}
+ul li.active a{
+    border: 1px solid #0e850e;
+    border-radius: 30px;
+    background-color: #0e850e;
+    color: cornsilk !important;
+    padding: 5px 15px;
+}
+
+.navbar .logo img{
+    margin: 8px;
+    width: 30px;
+    height: 28px;
+
+}
+
+.navbar>div{
+  display: inline-block;
+  margin: auto 50px auto auto;
+}
+
+.singleLink{
+  float: left;
+  color: #ffff !important;
+  border: 1px solid green;
+  background-color: #0e850e;
+}
