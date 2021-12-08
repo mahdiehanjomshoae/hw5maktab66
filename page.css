@@ -40,7 +40,7 @@
     float: right;
 }
 .menuBox ul li.active a{
-    border: 1px solid #0e850e;
+  border-bottom: 4px solid #0e850e;
     border-radius: 30px;
     background-color: #0e850e;
     color: cornsilk !important;
@@ -117,8 +117,12 @@ h1{
   padding: 3%;
   box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.2);
   width: 100px;
+  
+}
+.forosh.active{
   border-bottom: 4px solid #0e850e;
 }
+
 
 @media screen and (max-width: 480px) {
   .navbar{
@@ -132,6 +136,13 @@ h1{
     display: block !important;
   }
   .box{
+    width: 100% !important;
+  }
+  
+  .hamrahan{
+    display: block !important;
+  }
+  .forosh{
     width: 100% !important;
   }
 }
