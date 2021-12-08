@@ -1,18 +1,12 @@
- function maxNumber(){
+function maxNumber(){
     let max = arguments[0]
-    let y
-    try{
-        if(arguments.length === 0) throw `"null"`
+    if(arguments.length !== 0){
         for(let i = 0 ; i<arguments.length ; i++){ 
-            if(typeof arguments[i] !== "bigint"){
-                if(typeof arguments[i] !== "string"){
-                    if( !Number.isInteger(arguments[i])){
-                        throw `"Big Error"`
-                    }
-                }
-            } 
+            if((typeof arguments[i] !== "bigint") && (typeof arguments[i] !== "string") && !Number.isInteger(arguments[i])){
+                return "Big Error"
+            }
             if(arguments[i] === "" ||  (BigInt(arguments[i])  >= 2 ** 53)){
-                throw `"Big Error"`
+                return "Big Error";
             }else{ 
                 y = BigInt(arguments[i])
                 if(y >= max){
@@ -20,12 +14,13 @@
                 }
             }
         }
-        return max
+        return max;
     }
-    catch(error){
-        return error
+    else{
+        return "null"
     }
  }
+
  console.log(maxNumber(1n, 10n, 5n))// 10n 
  console.log(maxNumber("10", 5n, 1)) // 10n 
  console.log(maxNumber(2 ** 53)) // "Big Error" 
