@@ -2,49 +2,136 @@
     margin: 0;
     padding: 0;
 }
-
+/*بالا*/
 .navbar {
+  display:inline-flex;
   border-top: 15px solid #0e850e ;
   width: 100%;
   height: 68px;
   direction: rtl;
-  text-align: right;
   border-bottom:2px solid #9fa89f;
 }
 
-.navbar ul.menu li  {
-  display: inline-block;  
-  padding-right: 30px;
-  margin-top: 20px;
+.navbar div{
+  margin: 15px 0; 
+}
+
+.logo{
+  width: 15%;
+  text-align: center;
+}
+.navbar .logo img{
+  width: 41px;
+  height: 38px;
   
 }
-.navbar ul.menu li a { 
-    text-decoration: none; 
-    color: black;
+
+.menuBox{
+  width: 60%;
 }
-ul li.active a{
+.menuBox ul li  {
+  display:inline-flex; 
+  float: right;
+}
+.menuBox ul li a { 
+    text-decoration: none; 
+    color: black; 
+    padding: 5px 15px;
+    float: right;
+}
+.menuBox ul li.active a{
     border: 1px solid #0e850e;
     border-radius: 30px;
     background-color: #0e850e;
     color: cornsilk !important;
     padding: 5px 15px;
+    
 }
-
-.navbar .logo img{
-    margin: 8px;
-    width: 30px;
-    height: 28px;
-
-}
-
-.navbar>div{
-  display: inline-block;
-  margin: auto 50px auto auto;
+.menuBox a:hover, .singleLink a:hover{
+  background-color: #ddd;
+  color: black;
 }
 
 .singleLink{
-  float: left;
-  color: #ffff !important;
-  border: 1px solid green;
+  width: 15%;
+}
+.singleLink a{
+  float: left !important;
+  border: 1px solid #0e850e;
+  border-radius: 30px;
   background-color: #0e850e;
+  color: cornsilk !important;
+  padding: 5px 15px;
+  text-decoration: none;
+  
+}
+
+/*وسط*/
+h1{
+  text-align: center;
+  margin: 15px;
+}
+
+.box-sec{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.box-sec .box{
+  width: 33%;
+}
+.box-sec .box .box-img{
+  width:100px;
+  height:100px;
+  margin: auto;
+  padding: 25px;
+  margin-bottom: 5%;
+  background-color: sandybrown;
+  border-radius: 50%;
+}
+.box-sec .box .box-text{
+  text-align: center;
+  margin: auto;
+}
+
+
+/*ته*/
+.titer{
+  background-color: #eeecec;
+  padding: 1%;
+  color: #0e850e;
+}
+ .hamrahan{ 
+ background-color: #eeecec;
+ display: flex;
+  justify-content: center;
+} 
+ .hamrahan img  {
+  width: 100%;
+  height: 100%;
+} 
+.forosh{
+  background-color: #ffffff;
+  border-radius: 10%;
+  margin: 5%;
+  padding: 3%;
+  box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  border-bottom: 4px solid #0e850e;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar{
+    display: block !important;
+  }
+  .logo, .menuBox , .singleLink{
+    width: 100% !important;
+  }
+  
+  .box-sec{
+    display: block !important;
+  }
+  .box{
+    width: 100% !important;
+  }
 }
