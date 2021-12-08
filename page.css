@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: IRANSans;
 }
 /*بالا*/
 .navbar {
@@ -143,6 +144,7 @@ h1{
     display: block !important;
   }
   .forosh{
-    width: 100% !important;
+    width: 65% !important;
+    margin: 20px auto;
   }
 }
